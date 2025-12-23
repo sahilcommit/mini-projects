@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Music Player -play music for free</title>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtEk5Hcds_wXivIifEdMGWUTfNHdzDuZjX1w&s">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="music-player">
+      <div class="player-left">
+        <img class="player-img"  src="https://i.scdn.co/image/ab67616d0000b27395ca6a9b4083a86c149934ae" alt="ic">
+        
+        <div class="singerbox">
+          <h1>Daylight</h1>
+          <p class="singer">David Kushner</p>
+        </div>
+        <div class="leftplayericons">
+          <i class="fa-regular fa-heart"></i>
+          <a href="#"></a>
+          <i class="fa-solid fa-window-maximize"></i>
+          <a href="#"></a>
+        </div>
+        
+
+      </div>
+      <div class="player-mid">
+        <div class="playback">
+          <i class="fa-solid fa-shuffle"></i>
+          <a href="#"></a>
+          <i class="fa-solid fa-backward-step"></i>
+          <a href="#"></a>
+          <i class="fa-duotone fa-solid fa-circle-play fa-xl"></i>
+          <a href="#"></a>
+          <i class="fa-solid fa-forward-step"></i>
+          <a href="#"></a>
+          <i class="fa-solid fa-repeat"></i>
+          <a href="#"></a>
+        </div>
+        <div class="progress">
+          <span>0:00</span>
+          <input type="range" style="width: 18rem;">
+          <span>3:21</span>
+        </div>
+      </div>
+      <div class="player-right">
+        <i class="fa-solid fa-play"></i>
+        <a href="##"></a>
+        <i class="fa-solid fa-microphone"></i>
+        <a href="#"></a>
+        <i class="fa-solid fa-layer-group"></i>
+        <a href="#"></a>
+        <i class="fa-solid fa-server"></i>
+        <a href="#"></a>
+        <i class="fa-solid fa-volume-high"></i>
+        <a href="#"></a>
+        <input type="range">
+      </div>
+      
+    </div>
+    
+    <div class="sidebar">
+      <div class="nav">
+        <div class="nav-option" id="op1">
+          <i class="fa-solid fa-house"></i>
+          <a href="#">Home</a>
+        </div>
+        <div class="nav-option">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="#">Search</a>
+        </div>
+      </div>
+      <div class="library">
+        <div class="lib-options">
+          <div class="lib">
+            <i class="fa-solid fa-book-open"></i>
+            <a href="#">Your Library</a>
+          </div>
+        </div>
+        <div class="add-lib">
+          <i class="fa-solid fa-plus"></i>
+          <a href="#"></a>
+        </div>
+        <div class="lib-arr">
+          <i class="fa-solid fa-arrow-right"></i>
+          <a href="#"></a>
+        </div>
+        <div class="boxes">
+          <div class="card">
+            <div class="card-header">Create your first playlist</div>
+            <div class="card-body">it's easy,we'll help you</div>
+            <div class="btn">Create Playlist</div>
+          </div>
+          <div class="card">
+            <div class="card-header">Lets find some podcasts to follow</div>
+            <div class="card-body">We'll keep you updated on new episodes</div>
+            <div class="btn" >Browse podcasts</div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="main-content">
+      <div class="sticky-nav">
+        <div class="sticky-arr">
+          <i class="fa-solid fa-angle-left" ></i>
+          <a href="#"></a>
+          <i class="fa-solid fa-angle-right hide"></i>
+          <a href="#"></a>
+        </div>
+        <div class="nav-left">
+          <button class="badge hide" >Explore Premium</button>
+          <a href="#"></a>
+          <button class="badge" id="dark-badge"><i class="fa-solid fa-download"></i>Install App</button>
+          <a href="#"></a>
+          <i class="fa-solid fa-circle-user" id="profile"></i>
+          <a href="#"></a>
+        </div>
+      </div>
+      <div class="album">
+        <div class="cards">
+          <h2>Recently Played</h2>
+          <div class="cards-container">
+            <div class="albumcard">
+              <div class="icon">
+                <i class="fa-solid fa-circle-play"></i>
+                <a href="#"></a>
+              </div>
+              
+              <img  class="card-img" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg" alt="img" >
+              <p class="card-title">Top-50 Global</p>
+              <p class="card-info">Your daily update of most played tracks</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <h2>Trending now near you</h2>
+          <div class="cards-container">
+            <div class="albumcard">
+              <div class="icon">
+                <i class="fa-solid fa-circle-play"></i>
+                <a href="#"></a>
+              </div>
+              <img  class="card-img" src="https://i.scdn.co/image/ab67616d0000b2735675e83f707f1d7271e5cf8a" alt="img" >
+              <p class="card-title">Believer</p>
+              <p class="card-info">Imagine Dragons</p>
+            </div>
+            <div class="albumcard">
+              <div class="icon">
+                <i class="fa-solid fa-circle-play"></i>
+                <a href="#"></a>
+              </div>
+              
+              <img  class="card-img" src="https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6" alt="img" >
+              <p class="card-title">Hymn for the Weekend </p>
+              <p class="card-info">Coldplay</p>
+              
+            </div>
+            <div class="albumcard">
+              <div class="icon">
+                <i class="fa-solid fa-circle-play"></i>
+                <a href="#"></a>
+              </div>
+              
+              <img  class="card-img" src="https://i.scdn.co/image/ab67616d00001e02ff8727d34f9953fd9d62be24" alt="img" >
+              <p class="card-title">Zindagi Ek Safar Hai Suhana</p>
+              <p class="card-info">Kishore Kumar</p>
+              
+            </div>
+            <div class="albumcard">
+              <div class="icon">
+                <i class="fa-solid fa-circle-play"></i>
+                <a href="#"></a>
+              </div>
+              
+              <img  class="card-img" src="https://i.scdn.co/image/ab67616d0000b2733e6ab34accaafdc027f3d8c1" alt="img" >
+              <p class="card-title">Jeena Isi Ka Naam Hai </p>
+              <p class="card-info">kk</p>
+              
+            </div>
+            <div class="albumcard">
+              <div class="icon">
+                <i class="fa-solid fa-circle-play"></i>
+                <a href="#"></a>
+              </div>
+              
+              <img  class="card-img" src="https://i.scdn.co/image/ab67616d0000b27386a8ab515de4b7aef28cd631" alt="img" >
+              <p class="card-title">Memories</p>
+              <p class="card-info">Maroon 5</p>
+              
+            </div>
+            <div class="albumcard">
+              <div class="icon">
+                <i class="fa-solid fa-circle-play"></i>
+                <a href="#"></a>
+              </div>
+              <img  class="card-img" src="https://i.scdn.co/image/ab67616d0000b2735675e83f707f1d7271e5cf8a" alt="img" >
+              <p class="card-title">Believer</p>
+              <p class="card-info">Imagine Dragons</p>
+            </div>
+            <div class="albumcard">
+              <div class="icon">
+                <i class="fa-solid fa-circle-play"></i>
+                <a href="#"></a>
+             </div>
+              
+              <img  class="card-img" src="https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6" alt="img" >
+              <p class="card-title">Hymn for the Weekend </p>
+              <p class="card-info">Coldplay</p>
+              
+            </div>
+            
+          </div>
+          <div class="cards">
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+              <div class="albumcard">
+                <div class="icon">
+                  <i class="fa-solid fa-circle-play"></i>
+                  <a href="#"></a>
+                </div>
+                <img  class="card-img" src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg" alt="img" >
+                <p class="card-title">Viral 50 Global</p>
+                <p class="card-info">Your daily update of most viral tracks right....</p>
+              </div>
+              <div class="albumcard">
+                <div class="icon">
+                  <i class="fa-solid fa-circle-play"></i>
+                  <a href="#"></a>
+                </div>
+                
+                <img  class="card-img" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg" alt="img" >
+                <p class="card-title">Top 50 Global</p>
+                <p class="card-info">Your daily update of most played tracks right....</p>
+                
+              </div>
+              <div class="albumcard">
+                <div class="icon">
+                  <i class="fa-solid fa-circle-play"></i>
+                  <a href="#"></a>
+                </div>
+                
+                <img  class="card-img" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="img" >
+                <p class="card-title">Top 50 India</p>
+                <p class="card-info">Your daily update of most played tracks right....</p>
+                
+              </div>
+              <div class="albumcard">
+                <div class="icon">
+                  <i class="fa-solid fa-circle-play"></i>
+                  <a href="#"></a>
+                </div>
+                
+                <img  class="card-img" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_ar_default.jpg" alt="img" >
+                <p class="card-title">Top 50 Argentina</p>
+                <p class="card-info">Your daily update of most played tracks right....</p>
+                
+              </div>
+              <div class="albumcard">
+                <div class="icon">
+                  <i class="fa-solid fa-circle-play"></i>
+                  <a href="#"></a>
+                </div>
+                <img  class="card-img" src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg" alt="img" >
+                <p class="card-title">Viral 50 Global</p>
+                <p class="card-info">Your daily update of most viral tracks right....</p>
+              </div>
+              <div class="albumcard">
+                <div class="icon">
+                  <i class="fa-solid fa-circle-play"></i>
+                  <a href="#"></a>
+                </div>
+                
+                <img  class="card-img" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg" alt="img" >
+                <p class="card-title">Top 50 Global</p>
+                <p class="card-info">Your daily update of most played tracks right....</p>
+                
+              </div>
+              <div class="albumcard">
+                <div class="icon">
+                  <i class="fa-solid fa-circle-play"></i>
+                  <a href="#"></a>
+                </div>
+                
+                <img  class="card-img" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="img" >
+                <p class="card-title">Top 50 India</p>
+                <p class="card-info">Your daily update of most played tracks right....</p>
+                
+              </div>
+             
+            </div>    
+        
+          </div>
+          <div class="footer">
+
+        </div>
+      
+    
+   
+      </div>
+    
+    
+    </div>
+    
+  </div>
+</body>
+</html>

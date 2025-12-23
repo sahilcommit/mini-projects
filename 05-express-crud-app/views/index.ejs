@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Quara</h1>
+    <a href="http://localhost:8080/posts/new">New Post</a>
+    <% for(data of fakeData){ %>
+        <div class="post">
+            <h4 class="username" ><%=data.username%></h4>
+            <h3 class="content"><%=data.content%></h3>
+            <br>
+        </div>
+        <a href="http://localhost:8080/posts/<%=data.id%>" class="options">Show In Detail</a>
+        <a href="http://localhost:8080/posts/<%=data.id%>/edit" class="options">Edit Post</a>
+        <form method="post" action="/posts/<%=data.id%>?_method=DELETE" ><button>Delete</button></form>
+        
+    <%}%>
+   
+</body>
+</html>

@@ -1,0 +1,321 @@
+body {
+    font-family:"Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background-color:black;
+    color:white;
+    overflow:hidden;
+    margin:0;
+} 
+.main{
+    display:flex;
+    height:100vh;
+}
+.sidebar{
+    background: black;
+    width:340px;
+    border-radius: 1rem;
+    margin:.3rem;
+}
+.main-content{
+    background: #121212;
+    flex:1;
+    border-radius: 1rem;
+    overflow:auto;
+
+}
+.main .music-player{
+    background:black;
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    height:72px;
+    
+}
+a{
+    text-decoration:none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    height: 100px;
+    padding:0.5rem 0.75rem;
+    margin:0.3rem;
+    
+   
+    
+}
+.nav-option{
+    opacity:0.5;
+    padding:0.5rem;
+}
+.nav-option:hover{
+    opacity:1;
+}
+.nav-option i{
+    font-size:1.25rem;
+
+}
+.nav-option a{
+    font-size:1rem;
+    margin-left:1.2rem;
+}
+#op1 {
+    opacity:1;
+}
+.library{
+    display:flex;
+    padding:0.7rem;
+    padding-left: 1.0rem;
+    font-size: 20px;
+    background-color: #121212;
+    width:20rem;
+    margin-left: 0.6rem;
+    margin-right: 0.3rem;
+    height:39rem;
+    flex-wrap: wrap;
+}
+.library a{
+    padding-left:0.3rem;
+    border-radius: 1rem;
+   
+}
+
+.add-lib{
+    margin-left:4.0rem;
+    opacity:0.5;
+}
+.lib-arr{
+    margin-left:0.5rem;
+    opacity:0.5;
+}
+.lib{
+    opacity:0.5;
+}
+.lib:hover{
+    opacity:1;
+}
+.add-lib:hover{
+    opacity:1;
+}
+.lib-arr:hover{
+    opacity:1;
+}
+
+
+.card{
+    background-color:#232323;
+    color: white;
+    border-radius: .75rem;
+    height:10rem;
+    width:20.1rem;
+    margin:0rem 0.5rem 0.5rem 0.5rem;
+    position:relative;
+    right:1.6rem;
+    bottom:4rem;
+
+
+    
+}
+.card .btn{
+    color: black;
+    background-color: white;
+    height: 2rem;
+    width:10rem;
+    margin-left:2rem;
+    font-weight: 700;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+}
+.card-header{
+    font-weight: 500;
+    margin-left: 0.3rem;
+    padding:1rem;
+    
+}
+.card-body{
+    font-weight: 400;
+    font-size:13px;
+    padding:2rem 2rem 1.2rem 1.5rem;
+    padding-top:3px;
+    margin-left: 0.1rem;
+}
+.card + .card {
+    height:14rem;
+}
+.card + .card .card-header{
+    padding:1.5rem;
+    
+}
+.sticky-nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    position: sticky;
+    top:0;
+    background-color: #121212;
+    z-index: 1;
+}
+.sticky-nav button{
+    color:black;
+    border-radius: 1rem;
+}
+#dark-badge{
+    color: white;
+    background-color: black;
+    border:black;
+}
+.sticky-arr{
+    font-size:1.5rem;
+    padding-left: 1rem;
+}
+#profile{
+    margin-right: 1rem;
+}
+@media(max-width:1000px){
+    .hide{
+        display:none;
+    }
+}
+.cards-container{
+    padding: 1rem;
+    display: flex;
+    direction: row;
+    align-content: center;
+    padding:1.5rem;
+    overflow: scroll;
+    
+    
+}
+.albumcard{
+    background-color: #232323;
+    padding:1rem;
+    border-radius: 1rem;
+    justify-content: center;
+    margin-right: 1rem;
+    height:21rem;
+    width:17rem;
+    contain: content;
+    
+
+}
+.albumcard .icon{
+   font-size: 3rem;
+   position:absolute;
+   top:11.4rem;
+   left: 11.5rem;
+   color:rgb(41, 206, 41);
+   background-color: black;
+   background-color: transparent;
+   border-color: black;
+   cursor: pointer;
+   opacity:0;
+   transition:0.5s ease ;
+   
+}
+.albumcard:hover .icon{
+    opacity:1;
+}
+.card-img{
+    height:15rem;
+    width:15rem
+}
+h2{
+    font-size: 1.5rem;
+    font-weight:700;
+    padding-left: 1rem;
+}
+.card-title{
+    font-weight:600;
+    padding-top: 0.3rem;
+}
+.card-info{
+    font-weight:300;
+    font-size: 0.9rem;;
+    padding-top: 0.3rem;
+    opacity: 0.75;
+}
+.footer{
+    height:12rem;
+}
+.music-player{
+    z-index: 1;
+}
+.player-img{
+    height:4rem;
+    width:4rem;
+    margin-right: 1rem;
+    margin-left:1.5rem;
+    
+    
+}
+.player-left{
+    display:flex;
+    width:25%;
+    
+}
+.music-player{
+    display:inline-flex;
+    align-items: center;
+    
+}
+h1{
+    font-size: 1rem;
+}
+.singer{
+    font-size: 0.7rem;
+    position:absolute;
+    left:6.3rem;
+    top:2rem;
+}
+.singerbox{
+    padding-right: 3rem;
+}
+.leftplayericons{
+    padding-top: 0.8rem;
+
+}
+.leftplayericons i{
+    padding-right: 1rem;
+    padding-left: 0.8rem;
+}
+.player-mid{
+    width:45rem;
+}
+.playback{
+    justify-self: center;
+    padding-left: 1rem;
+    margin-bottom: 0.4rem;
+}
+.playback i{
+    padding-right: 1rem;
+    margin-right: 0.2rem;
+}
+.progress{
+    width:20.5rem;
+    justify-self: center;
+}
+
+span{
+    color:#121212;
+    font-weight: 700;
+}
+.player-right i{
+    margin-left: 0.3rem;
+}
+i{
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+}
+.yellow{
+    background-color: rgb(255, 215, 159);
+   
+}
+.red{
+    background-color: rgb(240, 112, 112);
+}
+.blue{
+    background-color: rgb(114, 114, 234);
+}
+.green{
+    background-color: rgb(134, 237, 134);
+}
+.box{
+    height:200px;
+    width:200px;
+    border: 7px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    margin: 20px;;
+}
+.boxes{
+    display:flex;
+    margin:20px;
+    justify-content: center;
+}
+.flash{
+    
+    background-color:white;
+}
+.flashPlayer{
+    background-color: rgb(4, 105, 12);
+}
+h3{
+    margin-left: 70vh;
+}
+.end{
+    background-color: brown;
+}

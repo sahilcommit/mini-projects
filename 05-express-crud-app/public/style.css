@@ -1,0 +1,29 @@
+.post{
+    background-color:rgb(209, 195, 181);
+}
+.username{
+    font-style: italic;
+    font-family:monospace;
+    color: brown;
+}
+.title{
+    color:brown;
+    display: inline-block;
+}
+input{
+  height: 20px;
+  width: 300px;
+}
+body{
+    background-color:rgb(213, 200, 200);;
+}
+a{
+    font-size: 20px;
+    color: rgb(15, 154, 103);
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 90px;
+}
+.options{
+    font-size: 15px;
+}
