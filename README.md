@@ -12,11 +12,10 @@ This table tracks my progress and provides quick access to the code and live dem
 
 | # | Project Name | Type | Key Technical Focus | Demo |
 | :--- | :--- | :--- | :--- | :--- |
-| **05** | [**Quara (RESTful CRUD)**](./05-express-crud-app) | **Backend** | Node.js, Express, REST APIs, EJS Templating | N/A (Server-side) |
-| **04** | [**Simon Says Game**](./04-simon-game) | **Game Logic** | State Management, Async Timing, Complex Logic | [🕹️ Play Game](https://sahilGit011.github.io/mini-projects/04-simon-game/) |
-| **03** | [**Smart To-Do List**](./03-to-do-list) | **DOM Tool** | Event Delegation, Dynamic DOM Creation | [✅ View Demo](https://sahilGit011.github.io/mini-projects/03-to-do-list/) |
-| **02** | [**Color Generator**](./02-random-color-generator) | **Utility** | Math.random(), Style Manipulation | [✅ View Demo](https://sahilGit011.github.io/mini-projects/02-random-color-generator/) |
-| **01** | [**Spotify UI Clone**](./01-spotify-clone-static) | **Frontend** | CSS Flexbox, Responsive Layouts, UI Fidelity | [✅ View Demo](https://sahilGit011.github.io/mini-projects/01-spotify-clone-static/) |
+| **04** | [**Quara (RESTful CRUD)**](./04-express-crud-app) | **Backend** | Node.js, Express, REST APIs, EJS Templating | N/A (Server-side) |
+| **03** | [**Simon Says Game**](./03-simon-says) | **Game Logic** | State Management, Async Timing, Complex Logic | [🕹️ Play Game](https://sahilcommit.github.io/mini-projects/03-simon-says/) |
+| **02** | [**Smart To-Do List**](./02-to-do-list) | **DOM Tool** | Event Delegation, Dynamic DOM Creation | [✅ View Demo](https://sahilcommit.github.io/mini-projects/02-to-do-list/) |
+| **01** | [**Spotify UI Clone**](./01-spotify-clone-static) | **Frontend** | CSS Flexbox, Responsive Layouts, UI Fidelity | [✅ View Demo](https://sahilcommit.github.io/mini-projects/01-spotify-clone-static/) |
 
 ---
 
@@ -26,33 +25,36 @@ This section highlights the technical skills mastered in each phase of developme
 
 ### Phase 3: Backend Engineering (Node.js & Express)
 * **Architecting RESTful APIs:** Designing standard endpoints (`GET`, `POST`, `PATCH`, `DELETE`) to manage resource state.
+
 * **Server-Side Rendering:** Using **EJS** to serve dynamic views based on backend data.
 * **Middleware Implementation:** Utilizing `method-override` for REST compliance and `body-parser` for form data handling.
 
-### Phase 2: Advanced JavaScript Logic
+### Phase 2: Advanced JavaScript Logic & DOM
 * **State Management:** Tracking complex game states (sequences, user turns, scoring) without external libraries.
 * **Asynchronous Operations:** Managing timing events (`setTimeout`) for visual feedback loops in games.
+
 * **Event Delegation:** Optimizing performance by attaching single listeners to parent containers rather than individual child elements.
 
 ### Phase 1: Layout & Design
 * **CSS Architecture:** Mastering **Flexbox** for aligning complex UI components (navbars, sidebars, player controls).
+
 * **Responsive Design:** Using relative units (`rem`, `%`) to ensure layouts adapt to viewport changes.
 
 ---
 
 ## 👨‍💻 Run Locally
 
-To run the backend projects (Project 05), you will need **Node.js** installed.
+To run the backend projects (Project 04), you will need **Node.js** installed.
 
-1.  Clone the repo:
+1. Clone the repo:
     ```bash
-    git clone [https://github.com/sahilGit011/mini-projects.git](https://github.com/sahilGit011/mini-projects.git)
+    git clone [https://github.com/sahilcommit/mini-projects.git](https://github.com/sahilcommit/mini-projects.git)
     ```
-2.  Navigate to the specific project folder:
+2. Navigate to the specific project folder:
     ```bash
-    cd 05-express-crud-app
+    cd 04-express-crud-app
     ```
-3.  Install dependencies and run:
+3. Install dependencies and run:
     ```bash
     npm install
     node index.js
