@@ -9,6 +9,19 @@ logs
 *.log
 *.tmp
 
-# macOS system file
+# OS system file
 .DS_Store
 .vscode
+Thumbs.db
+
+# Ignore IDE settings
+.vscode/
+.idea/
+
+# Ignore environment variables (API keys)
+.env
+.env.local
+
+# Ignore production builds
+dist/
+build/
